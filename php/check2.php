@@ -1,6 +1,6 @@
 <?php
-  /*задержка
-  sleep(3);*/
+  //задержка
+  sleep(3);
   
   //данные
   $login = htmlspecialchars($_POST['login1']);
