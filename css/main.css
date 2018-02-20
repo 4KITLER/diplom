@@ -1,0 +1,93 @@
+/* 
+    Created on : 11.02.2018, 17:20:21
+    Author     : bahma
+*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body{
+    background-color: blueviolet;
+    /*    text-align: center;*/
+}
+
+/*главная страница*/
+.account{
+    color: white;
+    text-align: right;
+    padding: 10px 50px 5px 0px;
+    height: 100px;
+    width: 100px;
+    background-color: chocolate;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    position: absolute;
+    left: 1300px;
+    top: 30px;  
+}
+
+.p3, .p4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.p3:visited{
+    color:white;
+}
+
+.p4{
+   margin-left: 30px;
+}
+
+.p3{
+    margin-right: 10px;
+}
+
+/*вход на страницу*/
+.p1 {
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.p2 {
+    
+}
+
+.tx1 {
+   margin-bottom: 0px;
+   border-color: black;
+}
+
+.tx2 {
+     padding-bottom: 0px;
+     border-color: black;
+    
+}
+
+.sb1 {
+    margin-top: 5px;
+    padding: 5px 20px 5px 20px;
+    color: white;
+    background-color: #30c749;
+    border-radius: 5px;
+}
+
+.sb1:hover{
+    color:blueviolet;
+    cursor: pointer;
+}
+
+.reg {
+    text-align: center;
+    width: 200px;
+    height: 180px;
+    margin-top: 200px;
+    margin-left: 600px;
+    border-radius: 20px;
+    background-color: white;
+    border-color: #30c749;
+}
+

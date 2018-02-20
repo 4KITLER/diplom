@@ -1,0 +1,60 @@
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body{
+    background-color: blueviolet;
+    /*    text-align: center;*/
+}
+
+
+.name{
+    text-align: center;
+    margin-top: 80px;  
+    margin-right: 70px;
+    font-family: sans-serif, serif; 
+    font-size: 20px;
+    color: white;
+}
+
+.name:hover{
+    color:black;
+}
+
+.reg{
+    text-align: center;
+    width: 250px;
+    height: 370px;
+    margin-top: 90px;
+    margin-left: 600px;
+    border-radius: 20px;
+    background-color: white;
+    border-color: #30c749;
+}
+
+.p1{
+
+    padding-top: 10px;
+}
+
+.tx1{
+    /*margin-bottom: 20px;*/
+}
+
+.sb1{
+    margin-top: 25px;
+}
+
+.tx1:hover{
+    color: red;
+}
+
+.sb1:hover{
+    cursor:pointer;
+}
+
+#info2{
+    color:red;
+}
