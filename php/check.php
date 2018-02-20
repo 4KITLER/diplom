@@ -1,12 +1,18 @@
 <?php
+    //echo '<pre>';var_dump($_POST);echo '</pre>';exit(); 
+    sleep(3);
+
+    $url = '../index.php';
+
+    //Вход на страницу
     //данные для подключения к БД
     $hm = 'localhost';
     $db = 'test';
     $un = 'root';
     $pw = '123456789';
     
-    $login = htmlspecialchars($_POST["tx1"]);
-    $password = htmlspecialchars($_POST["tx2"]);
+    $login = htmlspecialchars($_POST['login']);
+    $password = htmlspecialchars($_POST['password']);
     
     
     $conn = new mysqli($hm, $un, $pw, $db);
@@ -16,15 +22,18 @@
 
     
     //Проверка на существование данного логина
-    $query_test =  "SELECT * FROM users WHERE login = '$login'";
+    $query_test =  "SELECT * FROM users WHERE (login = '$login' AND password = '$password')";
     $result_test= mysqli_query($conn, $query_test);
     if( mysqli_num_rows($result_test) == 1 and ($login != 'admin')){
-        header('Location: registration.html');
-        echo "Вход выполнен!";
+        echo "Вход выполнен!";   
         exit();
+       
+
     }
     else if($login=='admin' and $password='admin'){
-        $query = "SELECT * FROM users";
+        echo "Вход выполнен,Admin!";
+        exit();
+        /*$query = "SELECT * FROM users";
         $result = $conn->query($query);
         if (!$result) {
             die($conn->error); 
@@ -45,16 +54,14 @@
             else {
                 echo '</br>'.'Данные не верны!';
             }
-        }
+        }*/
     }
     else{
         echo "Ошибка ввода!";
         sleep(3);
         exit();        
     }
-    
-    
-    
+
     $login = "";
     //закрытие соединения
     $result->close();

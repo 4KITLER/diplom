@@ -68,7 +68,7 @@ body{
 }
 
 .sb1 {
-    margin-top: 5px;
+    margin-top: 15px;
     padding: 5px 20px 5px 20px;
     color: white;
     background-color: #30c749;
@@ -83,7 +83,7 @@ body{
 .reg {
     text-align: center;
     width: 200px;
-    height: 180px;
+    height: 220px;
     margin-top: 200px;
     margin-left: 600px;
     border-radius: 20px;
